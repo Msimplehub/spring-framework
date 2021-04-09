@@ -64,6 +64,7 @@ abstract class ConfigurationClassUtils {
 
 	private static final Log logger = LogFactory.getLog(ConfigurationClassUtils.class);
 
+	// [Abbysun]: spring container add @Component @ComponentScan @Import @ImportResource annonation
 	private static final Set<String> candidateIndicators = new HashSet<>(8);
 
 	static {

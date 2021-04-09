@@ -53,6 +53,7 @@ public aspect AnnotationTransactionAspect extends AbstractTransactionAspect {
 	 * Matches the execution of any public method in a type with the Transactional
 	 * annotation, or any subtype of a type with the Transactional annotation.
 	 */
+	//[Abbysun]:aspect point @Transactional
 	private pointcut executionOfAnyPublicMethodInAtTransactionalType() :
 		execution(public * ((@Transactional *)+).*(..)) && within(@Transactional *);
 
