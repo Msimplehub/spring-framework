@@ -68,6 +68,7 @@ public abstract aspect AbstractTransactionAspect extends TransactionAspectSuppor
 		MethodSignature methodSignature = (MethodSignature) thisJoinPoint.getSignature();
 		// Adapt to TransactionAspectSupport's invokeWithinTransaction...
 		try {
+			//[Abbysun]:springTx 源码
 			return invokeWithinTransaction(methodSignature.getMethod(), txObject.getClass(), new InvocationCallback() {
 				public Object proceedWithInvocation() throws Throwable {
 					return proceed(txObject);
