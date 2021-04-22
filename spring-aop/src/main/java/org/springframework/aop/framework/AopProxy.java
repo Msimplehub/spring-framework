@@ -40,6 +40,7 @@ public interface AopProxy {
 	 */
 	Object getProxy();
 
+
 	/**
 	 * Create a new proxy object.
 	 * <p>Uses the given class loader (if necessary for proxy creation).
@@ -51,5 +52,4 @@ public interface AopProxy {
 	 * @return the new proxy object (never {@code null})
 	 */
 	Object getProxy(@Nullable ClassLoader classLoader);
-
 }
